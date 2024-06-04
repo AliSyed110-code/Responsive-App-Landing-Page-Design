@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const NavBar = () => {
@@ -5,7 +6,7 @@ const NavBar = () => {
     <nav className=" flex md:flex-row  flex-col gap-4 justify-between items-center text-lg ">
       <div className="flex md:flex-row flex-col items-center md:gap-8">
         <div className="flex items-center gap-2">
-          <img src="Frame.svg" alt="img" />
+          <Image width={40} height={40} src="Frame.svg" alt="Image" />
           <div className=" flex items-center">
             {" "}
             <span className="font-bold  text-3xl cursor-pointer">uifry</span>

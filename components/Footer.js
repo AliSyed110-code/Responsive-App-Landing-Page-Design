@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const Footer = () => {
@@ -6,7 +7,7 @@ const Footer = () => {
       <div className="container mx-auto px-4 flex  flex-wrap justify-start  gap-5 md:gap-40 items-center">
         <div className="flex items-start gap-2 flex-col">
           <div className="flex items-center gap-1">
-            <img src="Frame.svg" alt="img" />
+            <Image width={20} height={20} src="Frame.svg" alt="Image" />
             <div className="flex items-center">
               {" "}
               <span className="font-bold  text-3xl">uifry</span>
@@ -16,7 +17,7 @@ const Footer = () => {
           <div className="flex flex-col">
             <div className="flex gap-1">
               {" "}
-              <img src="msg.svg" alt="img" />
+              <Image width={20} height={20} src="msg.svg" alt="Image" />
               <a
                 href="mailto:Help@Frybix.com"
                 className="text-black font-semibold"
@@ -28,7 +29,7 @@ const Footer = () => {
           <div className="flex flex-col">
             <div className="flex gap-1">
               {" "}
-              <img src="call.svg" alt="img" />
+              <Image width={20} height={20} src="call.svg" alt="Image" />
               <a href="tel:+123445667889" className="text-black font-semibold">
                 +1234 456 678 89
               </a>

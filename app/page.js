@@ -1,5 +1,6 @@
 import Footer from "@/components/Footer";
 import NavBar from "@/components/NavBar";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -20,21 +21,27 @@ export default function Home() {
               <button className="bg-black text-white px-8 py-3  hover:bg-slate-800  rounded-sm">
                 GetStarted→
               </button>
-              <img className="cursor-pointer" src="Group 3.svg" alt="" />
+              <Image
+                width={30}
+                height={30}
+                className="cursor-pointer"
+                src="Group 3.svg"
+                alt=""
+              />
               <span className="font-semibold cursor-pointer">Watch video</span>
             </div>
             <div>
-              <img src="firstImg.svg" alt="" />
+              <Image width={500} height={500} src="firstImg.svg" alt="" />
             </div>{" "}
           </div>
           <div className="md:w-1/2">
-            <img src="Frame 1.svg" alt="" />
+            <Image width={500} height={500} src="Frame 1.svg" alt="" />
           </div>
         </main>
         <main className=" mx-auto my-10 flex flex-col md:flex-row md:gap-28 items-center">
           <div className="flex flex-col md:w-1/2  gap-5">
             <div>
-              <img src="Group10.svg" alt="" />
+              <Image width={500} height={500} src="Group10.svg" alt="" />
             </div>{" "}
           </div>
           <div className=" flex flex-col gap-4 md:w-1/2">
@@ -48,7 +55,7 @@ export default function Home() {
             </div>
 
             <h2 className="first:capitalize font-bold flex items-center gap-2">
-              <img src="star-05.svg" alt="" />
+              <Image width={20} height={20} src="star-05.svg" alt="" />
               Budgeting Intervals
             </h2>
             <p className="text-gray-500">
@@ -56,7 +63,7 @@ export default function Home() {
               faucibus tincidunt eu adipiscing sociis arcu lorem porttitor.
             </p>
             <h2 className="first:capitalize font-bold flex items-center gap-2">
-              <img src="cube-02.svg" alt="" />
+              <Image width={20} height={20} src="cube-02.svg" alt="" />
               Budgeting Intervals
             </h2>
             <p className="text-gray-500">
@@ -64,7 +71,7 @@ export default function Home() {
               faucibus tincidunt eu adipiscing sociis arcu lorem porttitor.
             </p>
             <h2 className="first:capitalize font-bold flex items-center gap-2">
-              <img src="cube-04.svg" alt="" />
+              <Image width={20} height={20} src="cube-04.svg" alt="" />
               Budgeting Intervals
             </h2>
             <p className="text-gray-500">
@@ -85,7 +92,7 @@ export default function Home() {
             </div>
 
             <h2 className="first:capitalize font-bold text-2xl flex items-center gap-2">
-              <img src="bell1.svg" alt="" />
+              <Image width={40} height={20} src="bell1.svg" alt="" />
               clever notifications
             </h2>
             <p className="text-gray-500">
@@ -98,19 +105,19 @@ export default function Home() {
           </div>
           <div className="flex flex-col md:w-1/2  gap-5">
             <div>
-              <img src="Nav.svg" alt="" />
+              <Image width={500} height={500} src="Nav.svg" alt="" />
             </div>{" "}
           </div>
         </main>
         <main className=" mx-auto my-10 flex flex-col md:flex-row md:gap-28 gap-28 items-center">
           <div className="flex flex-col md:w-1/2  gap-5">
             <div>
-              <img src="Group10.svg" alt="" />
+              <Image width={500} height={400} src="Group10.svg" alt="" />
             </div>{" "}
           </div>
           <div className=" flex flex-col gap-4 md:w-1/2">
             <h2 className="first:capitalize font-bold text-2xl flex items-center gap-2">
-              <img src="bell1.svg" alt="" />
+              <Image width={40} height={20} src="bell1.svg" alt="" />
               Fully Customizable
             </h2>
             <p className="text-gray-500">
@@ -133,7 +140,7 @@ export default function Home() {
             {" "}
             <div className="flex flex-col  md:w-1/2  gap-5">
               <div>
-                <img src="GP1.svg" alt="" />
+                <Image width={500} height={400} src="GP1.svg" alt="" />
               </div>{" "}
             </div>
             <div className=" flex flex-col gap-4 md:w-1/3">
@@ -148,7 +155,7 @@ export default function Home() {
                 ac dolor neque lorem sapien, suspendisse aliquam.”
               </p>
               <div>
-                <img src="GP.svg" alt="" />
+                <Image width={150} height={100} src="GP.svg" alt="" />
                 <p className="font-bold my-5">Nick Jonas</p>
               </div>
             </div>
@@ -231,7 +238,13 @@ export default function Home() {
           </div>
         </main>
         <main className=" mx-auto my-10 flex  items-center flex-col">
-          <img className="w-full" src="pic.svg" alt="" />
+          <Image
+            width={500}
+            height={400}
+            className="w-full"
+            src="pic.svg"
+            alt=""
+          />
         </main>
         <Footer />
       </div>
